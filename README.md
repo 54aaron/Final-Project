@@ -47,7 +47,11 @@ Accelerometer readings are primarily accessed through the Adafruit_MPU6050 and A
 
 In short, the media arts program used to display the die's functionality operates as a fairly simple javascript program. The program constantly listens for various events and then carries out some lines of code based on the type of event it receives.
 
-In this case, the program is really only listening for "message"
+In this case, the program is really only listening for "message" events - which are the events that contain accelerometer readings.
+Once those readings are received as a JSON message, they are then parsed by the program and their values corresponded to certain sides of the die.
+
+Each side of the die (i.e. each combination of values) also corresponds to a .gif file of a doodle.
+If it is determined that the die has landed on a certain side, then the doodle that corresponds to that side, as well as the number of the side, appears on the browser screen.
 
 # Hardware
   
@@ -55,40 +59,23 @@ In this case, the program is really only listening for "message"
 After you're done with your code, you'll use the PlatformIO IDE's upload function to flash your device with the program via a USB-C cable between your computer and your ESP32's USB-C port. 
 
 ### Connecting Components 
-All components were connected with the assistance of a breadboard and various jumper wires.
-The stepper motor wires were connected to Ground, the 5v pin, as well as pins 25, 26, 27, and 33. The Servo motor wires were connected to Ground, the 5v pin, and pin 15. A potentiometer was also connected (ground, a 3.3v pin, and pin 12) but the potentiometer was never made functional.
+All components were connected with the assistance of various jumper wires.
+The MPU6050 component was connected to a Ground pin, a 3v, and pins 21 and 22. 
   
 ![an ESP32 connected to two motors and potentiometer via a breadboard](https://github.com/54aaron/Module-3/blob/main/img/IMG_88071.jpg)
 
 ### Enclosure
-The enclosure for this project was particularly important as it was intertwined with the overall visuals of the sculpture.
+The enclosure for this project was particularly important as this was a project meant to be thrown.
+As such, the enclosure would need to be:
+- Sturdy enough as to not fall apart and also protect the components inside from impact.
+- Respond well to being tossed
 
-Similar to my last project, after the circuit had been built and all the components connected - it was then encased in a box of sorts made from cardboard and hot glued together. For this project, I went with a thinner cardboard that was easier to cut with a scissors. Moreover, the top of this enclosure was not hot glued together but was assembled using double sided tape. I wanted it to be removable in the case that I needed to troubleshoot the circuit (I did not need to).
-The breadboard and motors had been secured to the bottom of this encasing using double sided tape. 
+As such, I originally went with 3 ply chipbaord and, while it was pretty sturdy, it was not the best dice rolling experience in the world - so I eventualy switched to foam board which seemed to be a lot better!
 
-Moreover, large holes had been made on the top of this enclosure as to expose the motor shafts:
+I initially only hot glued together 3 sides of the die's box as I wanted to assemble and secure the system before adding more sides, which would've made it more trickier to put together
+
+Once I had connected and secured the ESP32, battery, and gyroscope (with lots of electrical tape) - I hot glued together the other sides.
+
+As to allow quick retrieval of components / access to troubleshooting, I did not glue one side. the tension of the foam board however, seemed to be more than enough to keep it in place while being tossed.
   
 ![An ESP32 circuit encased in a cardboard box](https://github.com/54aaron/Module-3/blob/main/img/IMG_8855.jpg)
-  
-After the overall circuit had been encased, I got to work on the planet and star sculptures.
-This process was fairly straightforward and involved cutting out various cardboard shapes and hot gluing them together.
-
-Once the sculptures had been assembled, they were attached to circular pieces of cardboard which would be attached to each motor. 
-
-The planet sculpture was attached to the stepper motor via an incision made in the center of the circular pedestal.
-The Star cluster sculpture had been attached to the servo motor via the use of a plastic propeller attachment and double-sided tape.
-
-It might be worth considering the size of these sculptures as they would need to fit well with the motors.
-
-I made the mistake of making the planet sculpture very large initially but it would always tip over its pedestal off the motor shaft.
-
-![a very large cardboard planet sculpture](https://github.com/54aaron/Module-3/blob/main/img/IMG_8809.jpg)
-
-And, as such, I needed to size down a bit:
-
-![an tinier cardboard planet scultpure](https://github.com/54aaron/Module-3/blob/main/img/IMG_8810.jpg)
-
-After everything had been assembled and hot glued together, I took the liberty of painting everything with acrylic paint.
-Be sure to have enough paint and be aware that you may need multiple coats to fully cover the brown of the cardboard.
-
-![an image of a eSP32 device running a program](https://github.com/54aaron/Module-3/blob/main/img/IMG_8828.jpg)
