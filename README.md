@@ -76,7 +76,7 @@ As such, I originally went with 4" x 4" x 4" 3-ply chipbaord.
 
 and, while it was pretty sturdy, it was not the best dice rolling experience in the world - so I eventualy switched to foam board:
 
-![4" x 4" x 4" foamboard die](https://github.com/54aaron/Final-Project/blob/main/img/IMG_9358.jpg)
+![4" x 4" x 4" foamboard die](https://github.com/54aaron/Final-Project/blob/main/img/IMG_9479.jpg)
 
 But eventually landed on simply sizing the chipbaord down to 3 inches on each side:
 
