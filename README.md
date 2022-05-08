@@ -1,4 +1,4 @@
-![a kinetic sculpture](https://github.com/54aaron/Final-Project/blob/main/img/IMG_9455.jpg?raw=true)
+![a cardboard die](https://github.com/54aaron/Final-Project/blob/main/img/IMG_9455.jpg?raw=true)
 # Dice.
 
 "Dice" is a novel form of computer input.
@@ -14,7 +14,7 @@ The X, Y, and Z axis readings from the gyroscope's accelerometer are calibrated 
 
 Below is a chart of how I determined which readings would correspond to which side: 
 
-![a kinetic sculpture](https://github.com/54aaron/Final-Project/blob/main/img/IMG_9355.jpg?raw=true)
+![a chart of accelermoter readings related to sides of a die](https://github.com/54aaron/Final-Project/blob/main/img/IMG_9355.jpg?raw=true)
 
 On a software end, the media arts program of this project exists entirely online. 
 This is accomplished through leveraging the ESP32 to host an online webserver and serving the media arts program through that same server.
