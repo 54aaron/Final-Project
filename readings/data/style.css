@@ -1,0 +1,33 @@
+#pic{
+    width: 70%;
+}
+
+#roll{
+    position:absolute;
+    right: 50px;
+    top: 1px;
+    color: blue;
+    font-size: 72px;
+}
+
+.chart{
+    display: flex;
+    width: auto;
+}
+
+.chart img{
+    width: 150px;
+    height: auto;
+}
+
+.chart p{
+    color: blue;
+    font-size: 36px;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
